@@ -1,10 +1,43 @@
 {
   "users": [
     {
-      "email": "testeRota@testing.com",
-      "password": 555,
-      "id": 1
+      "email": "email@email.com",
+      "password": "$2a$10$lhbiWfQbG.vBIBLoh3URGuWa/ElxkH4OmxLUXjsirN3U6QRDIuGLa",
+      "name": "Testerina",
+      "id": 1,
+      "userId": 1
     }
   ],
-  "ideas": []
+  "ideas": [
+    {
+      "title": "Não tão novo titulo",
+      "content": "Mais um texto, mais um teste",
+      "userId": 3,
+      "id": 1
+    },
+    {
+      "title": "Não tão novo titulo",
+      "content": "Mais um texto, mais um teste",
+      "userId": 3,
+      "id": 2
+    },
+    {
+      "title": "Mudou",
+      "content": "Mais teste",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "title": "funciona",
+      "content": "Mais teste",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "title": "Mais títulos",
+      "content": "Mais teste",
+      "userId": 1,
+      "id": 5
+    }
+  ]
 }
