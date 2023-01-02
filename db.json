@@ -38,6 +38,12 @@
       "content": "Mais teste",
       "userId": 1,
       "id": 5
+    },
+    {
+      "title": "outras coisas",
+      "content": "Mais teste",
+      "userId": 1,
+      "id": 6
     }
   ]
 }
