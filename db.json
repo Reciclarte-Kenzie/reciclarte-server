@@ -1,4 +1,10 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "testeRota@testing.com",
+      "password": 555,
+      "id": 1
+    }
+  ],
   "ideas": []
 }
