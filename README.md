@@ -9,15 +9,39 @@ Para aproveitar as funcionalidades de autenticação e rodar a API corretamente,
 
 #### Cadastrar usuário - POST - /users <br>
 
-Obrigatoriamente passar email e senha, pode fornecer outros campos (ainda precisamos definir o que vai constituir o usuário) <br>
+O usuário deve conter: <br>
+
+```json
+{
+  "email": "email@gmail.com",
+  "password": "abcde",
+  "name": "Jean Antunes",
+  "bio": "Meu nome é Jean e sou apaixonado por artesanatos DIY",
+  "profile_pic": "http://img.com/png",
+  "social_media": {
+    "instagram": "http://instagram.com/user/exemplo-link",
+    "facebook": "http://facebook.com/user/exemplo-link",
+    "linkedin": "http://linkedin.com/user/exemplo-link"
+  }
+}
+```
+
+<br>
 Resposta padrão: <br>
 
 ```json
 {
   "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY3MjY5MjMxMCwiZXhwIjoxNjcyNjk1OTEwLCJzdWIiOiIxIn0.tMMI11uMefd-U5Ps-eUGGt3VZteLi8HKPFvaTlEcxSA",
   "user": {
-    "email": "email@email.com",
-    "name": "testerino",
+    "email": "email@gmail.com",
+    "name": "Jean Antunes",
+    "bio": "Meu nome é Jean e sou apaixonado por artesanatos DIY",
+    "profile_pic": "http://img.com/png",
+    "social_media": {
+      "instagram": "http://instagram.com/user/exemplo-link",
+      "facebook": "http://facebook.com/user/exemplo-link",
+      "linkedin": "http://linkedin.com/user/exemplo-link"
+    },
     "id": 1
   }
 }
@@ -32,8 +56,15 @@ Resposta padrão: <br>
 {
   "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY3MjY5MzAxMSwiZXhwIjoxNjcyNjk2NjExLCJzdWIiOiIxIn0.F9LVrUGFAIaEZyTOFTrslXv-mrP8E1oQ_CeWxgAw67Q",
   "user": {
-    "email": "email@email.com",
-    "name": "testerino",
+    "email": "email@gmail.com",
+    "name": "Jean Antunes",
+    "bio": "Meu nome é Jean e sou apaixonado por artesanatos DIY",
+    "profile_pic": "http://img.com/png",
+    "social_media": {
+      "instagram": "http://instagram.com/user/exemplo-link",
+      "facebook": "http://facebook.com/user/exemplo-link",
+      "linkedin": "http://linkedin.com/user/exemplo-link"
+    },
     "id": 1
   }
 }
@@ -46,11 +77,20 @@ Resposta padrão com a informação editada: <br>
 
 ```json
 {
-  "email": "email@email.com",
-  "password": "$2a$10$lhbiWfQbG.vBIBLoh3URGuWa/ElxkH4OmxLUXjsirN3U6QRDIuGLa",
-  "name": "Testerina",
-  "id": 1,
-  "userId": 1
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY3MjY5MjMxMCwiZXhwIjoxNjcyNjk1OTEwLCJzdWIiOiIxIn0.tMMI11uMefd-U5Ps-eUGGt3VZteLi8HKPFvaTlEcxSA",
+  "user": {
+    "email": "email@gmail.com",
+    "name": "Jean Valjean Antunes",
+    "bio": "Meu nome é Jean e sou apaixonado por artesanatos DIY",
+    "profile_pic": "http://img.com/png",
+    "social_media": {
+      "instagram": "http://instagram.com/user/exemplo-link",
+      "facebook": "http://facebook.com/user/exemplo-link",
+      "linkedin": "http://linkedin.com/user/exemplo-link"
+    },
+    "id": 1,
+    "userId": 1
+  }
 }
 ```
 
@@ -61,11 +101,20 @@ Resposta padrão: <br>
 
 ```json
 {
-  "email": "email@email.com",
-  "password": "$2a$10$lhbiWfQbG.vBIBLoh3URGuWa/ElxkH4OmxLUXjsirN3U6QRDIuGLa",
-  "name": "Testerina",
-  "id": 1,
-  "userId": 1
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY3MjY5MjMxMCwiZXhwIjoxNjcyNjk1OTEwLCJzdWIiOiIxIn0.tMMI11uMefd-U5Ps-eUGGt3VZteLi8HKPFvaTlEcxSA",
+  "user": {
+    "email": "email@gmail.com",
+    "name": "Jean Valjean Antunes",
+    "bio": "Meu nome é Jean e sou apaixonado por artesanatos DIY",
+    "profile_pic": "http://img.com/png",
+    "social_media": {
+      "instagram": "http://instagram.com/user/exemplo-link",
+      "facebook": "http://facebook.com/user/exemplo-link",
+      "linkedin": "http://linkedin.com/user/exemplo-link"
+    },
+    "id": 1,
+    "userId": 1
+  }
 }
 ```
 
@@ -77,11 +126,20 @@ Resposta padrão: <br>
 ```json
 [
   {
-    "email": "email@email.com",
-    "password": "$2a$10$lhbiWfQbG.vBIBLoh3URGuWa/ElxkH4OmxLUXjsirN3U6QRDIuGLa",
-    "name": "Testerina",
-    "id": 1,
-    "userId": 1
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY3MjY5MjMxMCwiZXhwIjoxNjcyNjk1OTEwLCJzdWIiOiIxIn0.tMMI11uMefd-U5Ps-eUGGt3VZteLi8HKPFvaTlEcxSA",
+    "user": {
+      "email": "email@gmail.com",
+      "name": "Jean Valjean Antunes",
+      "bio": "Meu nome é Jean e sou apaixonado por artesanatos DIY",
+      "profile_pic": "http://img.com/png",
+      "social_media": {
+        "instagram": "http://instagram.com/user/exemplo-link",
+        "facebook": "http://facebook.com/user/exemplo-link",
+        "linkedin": "http://linkedin.com/user/exemplo-link"
+      },
+      "id": 1,
+      "userId": 1
+    }
   }
 ]
 ```
@@ -90,15 +148,38 @@ Resposta padrão: <br>
 
 #### Criar ideia - POST - /ideas <br>
 
-Deve fornecer token de acesso e o id do usuário que cria o post (“userId”), resta definir quais outros campos necessários <br>
+Deve fornecer token de acesso e o id do usuário que cria o post (“userId”). <br>
+
+O corpo da requisção deve conter: <br>
+
+```json
+{
+  "title": "nome do artesanato",
+  "imgs": ["http://img.com/img-1.png", "http://img.com/img-2.png"],
+  "steps": "passo a passo",
+  "materials": ["Garrafa pet", "Tampa de garrafa"],
+  "categories": ["Móveis"],
+  "estimated_cost": 5.0,
+  "difficulty_level": 1,
+  "userId": 1
+}
+```
+
+<br>
+
 Resposta padrão: <br>
 
 ```json
 {
-  "title": "Mais títulos",
-  "content": "Mais teste",
+  "title": "nome do artesanato",
+  "imgs": ["http://img.com/img-1.png", "http://img.com/img-2.png"],
+  "steps": "passo a passo",
+  "materials": ["Garrafa pet", "Tampa de garrafa"],
+  "categories": ["Móveis"],
+  "estimated_cost": 5.0,
+  "difficulty_level": 1,
   "userId": 1,
-  "id": 5
+  "id": 3
 }
 ```
 
@@ -109,8 +190,13 @@ Resposta padrão: <br>
 
 ```json
 {
-  "title": "Mudou",
-  "content": "Mais teste",
+  "title": "Garrafa fechada",
+  "imgs": ["http://img.com/img-1.png", "http://img.com/img-2.png"],
+  "steps": "passo a passo",
+  "materials": ["Garrafa pet", "Tampa de garrafa"],
+  "categories": ["Móveis"],
+  "estimated_cost": 5.0,
+  "difficulty_level": 1,
   "userId": 1,
   "id": 3
 }
@@ -124,26 +210,46 @@ Resposta padrão: <br>
 ```json
 [
   {
-    "title": "Não tão novo titulo",
-    "content": "Mais um texto, mais um teste",
+    "title": "Garrafa fechada",
+    "imgs": ["http://img.com/img-1.png", "http://img.com/img-2.png"],
+    "steps": "passo a passo",
+    "materials": ["Garrafa pet", "Tampa de garrafa"],
+    "categories": ["Móveis"],
+    "estimated_cost": 5.0,
+    "difficulty_level": 1,
     "userId": 3,
     "id": 1
   },
   {
-    "title": "Não tão novo titulo",
-    "content": "Mais um texto, mais um teste",
+    "title": "Garrafa fechada",
+    "imgs": ["http://img.com/img-1.png", "http://img.com/img-2.png"],
+    "steps": "passo a passo",
+    "materials": ["Garrafa pet", "Tampa de garrafa"],
+    "categories": ["Móveis"],
+    "estimated_cost": 5.0,
+    "difficulty_level": 1,
     "userId": 3,
     "id": 2
   },
   {
-    "title": "Mudou",
-    "content": "Mais teste",
+    "title": "Garrafa fechada",
+    "imgs": ["http://img.com/img-1.png", "http://img.com/img-2.png"],
+    "steps": "passo a passo",
+    "materials": ["Garrafa pet", "Tampa de garrafa"],
+    "categories": ["Móveis"],
+    "estimated_cost": 5.0,
+    "difficulty_level": 1,
     "userId": 1,
     "id": 3
   },
   {
-    "title": "funciona",
-    "content": "Mais teste",
+    "title": "Garrafa fechada",
+    "imgs": ["http://img.com/img-1.png", "http://img.com/img-2.png"],
+    "steps": "passo a passo",
+    "materials": ["Garrafa pet", "Tampa de garrafa"],
+    "categories": ["Móveis"],
+    "estimated_cost": 5.0,
+    "difficulty_level": 1,
     "userId": 1,
     "id": 4
   }
