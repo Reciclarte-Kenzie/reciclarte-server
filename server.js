@@ -1,6 +1,7 @@
 const jsonServer = require("json-server");
 const auth = require("json-server-auth");
 const cors = require("cors");
+const customRoutes = require("./custom-routes");
 const port = process.env.PORT || 3001;
 
 const app = jsonServer.create();
@@ -15,6 +16,7 @@ const rules = auth.rewriter({
 app.use(cors());
 app.use(rules);
 app.use(auth);
+app.use(customRoutes);
 app.use(router);
 app.listen(port);
 
