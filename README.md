@@ -32,8 +32,7 @@ Resposta padrão: <br>
 
 ```json
 {
-  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY
-  3MjY5MjMxMCwiZXhwIjoxNjcyNjk1OTEwLCJzdWIiOiIxIn0.tMMI11uMefd-U5Ps-eUGGt3VZteLi8HKPFvaTlEcxSA",  
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY",  
   "user": {
     "email": "email@gmail.com",
     "name": "Jean Antunes",
@@ -56,9 +55,7 @@ Resposta padrão: <br>
 
 ```json
 {
-  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY
-  3MjY5MzAxMSwiZXhwIjoxNjcyNjk2NjExLCJzdWIiOiIxIn0.F9LVrUGFAIaEZyTOFTrslXv-mrP8E1oQ_CeWxgAw67Q",
-  
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY",
   "user": {
     "email": "email@gmail.com",
     "name": "Jean Antunes",
@@ -81,8 +78,7 @@ Resposta padrão com a informação editada: <br>
 
 ```json
 {
-  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY
-  3MjY5MjMxMCwiZXhwIjoxNjcyNjk1OTEwLCJzdWIiOiIxIn0.tMMI11uMefd-U5Ps-eUGGt3VZteLi8HKPFvaTlEcxSA",  
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY",  
   "user": {
     "email": "email@gmail.com",
     "name": "Jean Valjean Antunes",
@@ -106,8 +102,7 @@ Resposta padrão: <br>
 
 ```json
 {
-  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY
-  3MjY5MjMxMCwiZXhwIjoxNjcyNjk1OTEwLCJzdWIiOiIxIn0.tMMI11uMefd-U5Ps-eUGGt3VZteLi8HKPFvaTlEcxSA",  
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY",  
   "user": {
     "email": "email@gmail.com",
     "name": "Jean Valjean Antunes",
@@ -132,8 +127,7 @@ Resposta padrão: <br>
 ```json
 [
   {
-    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY
-    3MjY5MjMxMCwiZXhwIjoxNjcyNjk1OTEwLCJzdWIiOiIxIn0.tMMI11uMefd-U5Ps-eUGGt3VZteLi8HKPFvaTlEcxSA",    
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlhdCI6MTY",    
     "user": {
       "email": "email@gmail.com",
       "name": "Jean Valjean Antunes",
