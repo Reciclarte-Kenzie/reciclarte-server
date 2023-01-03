@@ -99,6 +99,11 @@ Resposta padrão com a informação editada: <br>
 }
 ```
 
+### Deletar usuário - DELETE  /users/`${id}` <br>
+Deve fornecer token de acesso <br>
+
+A resposta padrão não possui token e retorna o status `200` <br>
+
 ### Buscar perfil de usuário - GET /users/`${id}` <br>
 
 Deve fornecer token de acesso <br>
@@ -205,6 +210,30 @@ Resposta padrão: <br>
   "userId": 1,
   "id": 3
 }
+```
+
+### Deletar ideias - DELETE  /ideas/`${id}` <br>
+Deve fornecer token de acesso <br>
+
+A resposta padrão não possui token e retorna o status `200` <br>
+
+### Acessar ideia - GET /ideas/`${id} <br>
+
+Não precisa de token de acesso. <br>
+Resposta padrão: <br>
+
+```json
+  {
+    "title": "Garrafa fechada",
+    "imgs": ["http://img.com/img-1.png", "http://img.com/img-2.png"],
+    "steps": "passo a passo",
+    "materials": ["Garrafa pet", "Tampa de garrafa"],
+    "categories": ["Móveis"],
+    "estimated_cost": 5.0,
+    "difficulty_level": 1,
+    "userId": 1,
+    "id": 4
+  }
 ```
 
 ### Listar todas as ideias - GET /ideas <br>
