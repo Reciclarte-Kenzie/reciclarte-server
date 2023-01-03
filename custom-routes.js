@@ -8,8 +8,10 @@ router.get("/ideas", (request, response) => {
   let ideasData = database.ideas;
   let searchedMaterials = request.query.materials;
   let searchedCategories = request.query.categories;
-  let difficultyLevel = request.query.difficulty_level;
-  let maximumCost = request.query.maximum_cost;
+  let searchedDifficultyLevel = request.query.difficulty_level;
+
+  const maximumCost = request.query.maximum_cost;
+  const searchedTitle = request.query.title.toLowerCase();
 
   if (searchedMaterials) {
     ideasData = ideasData.filter((idea) => {
@@ -43,19 +45,27 @@ router.get("/ideas", (request, response) => {
     });
   }
 
-  if (difficultyLevel) {
+  if (searchedDifficultyLevel) {
     ideasData = ideasData.filter((idea) => {
-      difficultyLevel =
-        difficultyLevel instanceof Array
-          ? difficultyLevel
-          : [difficultyLevel];
-          
-      return difficultyLevel.some((searchedDifficulty) => idea.difficulty_level == searchedDifficulty);
+      searchedDifficultyLevel =
+        searchedDifficultyLevel instanceof Array
+          ? searchedDifficultyLevel
+          : [searchedDifficultyLevel];
+
+      return searchedDifficultyLevel.some(
+        (searchedDifficulty) => idea.difficulty_level == searchedDifficulty
+      );
     });
   }
 
   if (maximumCost) {
     ideasData = ideasData.filter((idea) => idea.estimated_cost <= maximumCost);
+  }
+
+  if (searchedTitle) {
+    ideasData = ideasData.filter((idea) =>
+      idea.title.toLowerCase().includes(searchedTitle)
+    );
   }
 
   response.send(ideasData);
@@ -67,13 +77,15 @@ router.get("/ideas/materials", (_, response) => {
 
   const usedMaterials = [];
 
-  ideasData.forEach(idea => idea.materials.forEach(ideaMaterial => {
-    const thisMaterialIsNotIncluded = !usedMaterials.includes(ideaMaterial);
+  ideasData.forEach((idea) =>
+    idea.materials.forEach((ideaMaterial) => {
+      const thisMaterialIsNotIncluded = !usedMaterials.includes(ideaMaterial);
 
-    if(thisMaterialIsNotIncluded) {
-      usedMaterials.push(ideaMaterial);
-    }
-  }))
+      if (thisMaterialIsNotIncluded) {
+        usedMaterials.push(ideaMaterial);
+      }
+    })
+  );
 
   return response.send(usedMaterials);
 });
@@ -84,13 +96,16 @@ router.get("/ideas/categories", (_, response) => {
 
   const ownedCategories = [];
 
-  ideasData.forEach(idea => idea.categories.forEach(ideaCategorie => {
-    const thisCategorieIsNotIncluded = !ownedCategories.includes(ideaCategorie);
+  ideasData.forEach((idea) =>
+    idea.categories.forEach((ideaCategorie) => {
+      const thisCategorieIsNotIncluded =
+        !ownedCategories.includes(ideaCategorie);
 
-    if(thisCategorieIsNotIncluded) {
-      ownedCategories.push(ideaCategorie);
-    }
-  }))
+      if (thisCategorieIsNotIncluded) {
+        ownedCategories.push(ideaCategorie);
+      }
+    })
+  );
 
   return response.send(ownedCategories);
 });
