@@ -11,7 +11,7 @@ router.get("/ideas", (request, response) => {
   let searchedDifficultyLevel = request.query.difficulty_level;
 
   const maximumCost = request.query.maximum_cost;
-  const searchedTitle = request.query.title.toLowerCase();
+  const searchedTitle = request.query.title?.toLowerCase();
 
   if (searchedMaterials) {
     ideasData = ideasData.filter((idea) => {
