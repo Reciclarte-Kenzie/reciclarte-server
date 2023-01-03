@@ -6,6 +6,10 @@ A API do site Reciclarte foi criada durante o projeto de finalização do módul
 ## Carregar endpoints no insomnia
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=reciclarte-api&uri=)
 
+## Base Url da API
+Essa é a URL usada antes dos endpoints: <br> 
+https://reciclarte-api.onrender.com
+
 ## Endpoints: Users
 
 ### Cadastrar usuário - POST  /users <br>
