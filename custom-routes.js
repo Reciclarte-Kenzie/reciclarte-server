@@ -61,4 +61,21 @@ router.get("/ideas", (request, response) => {
   response.send(ideasData);
 });
 
+router.get("/ideas/materials", (_, response) => {
+  const database = JSON.parse(fileSystem.readFileSync("db.json", "utf-8"));
+  const ideasData = database.ideas;
+
+  const usedMaterials = [];
+
+  ideasData.forEach(idea => idea.materials.forEach(ideaMaterial => {
+    const thisMaterialIsNotIncluded = !usedMaterials.includes(ideaMaterial);
+
+    if(thisMaterialIsNotIncluded) {
+      usedMaterials.push(ideaMaterial);
+    }
+  }))
+
+  return response.send(usedMaterials);
+});
+
 module.exports = router;
