@@ -7,7 +7,7 @@ router.get("/ideas/search", (request, response) => {
   const ideasData = (JSON.parse(fileSystem.readFileSync("db.json", "utf-8")).ideas);
   
   const ideasWithTheSpecifiedMaterial = ideasData.filter( idea => {
-    return searchedMaterials.every(searchedMaterial => idea.materials.includes(searchedMaterial));
+    return searchedMaterials.every(searchedMaterial => idea.materials.find(ideaMaterial => ideaMaterial.toLowerCase() == searchedMaterial.toLowerCase()));
   });
 
   response.send(ideasWithTheSpecifiedMaterial);
