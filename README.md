@@ -102,7 +102,7 @@ Resposta padrão com a informação editada: <br>
 ### Deletar usuário - DELETE  /users/`${id}` <br>
 Deve fornecer token de acesso <br>
 
-A resposta padrão não possui token e retorna o status `200` <br>
+A resposta padrão não possui corpo e retorna o status `200` <br>
 
 ### Buscar perfil de usuário - GET /users/`${id}` <br>
 
@@ -215,7 +215,7 @@ Resposta padrão: <br>
 ### Deletar ideias - DELETE  /ideas/`${id}` <br>
 Deve fornecer token de acesso <br>
 
-A resposta padrão não possui token e retorna o status `200` <br>
+A resposta padrão não possui corpo e retorna o status `200` <br>
 
 ### Acessar ideia - GET /ideas/`${id} <br>
 
