@@ -69,6 +69,28 @@
       "estimated_cost": 5,
       "difficulty_level": 1,
       "id": 6
+    },
+    {
+      "userId": 4,
+      "title": "Sofazinho",
+      "imgs": [
+        "http://img.com/img-1.png",
+        "http://img.com/img-2.png"
+      ],
+      "steps": "passo a passo",
+      "materials": [
+        "Tecido",
+        "Linha",
+        "Tampa de garrafa",
+        "Caixa de leite"
+      ],
+      "categories": [
+        "Peso de porta",
+        "Colorido"
+      ],
+      "estimated_cost": 15,
+      "difficulty_level": 5,
+      "id": 7
     }
   ]
 }

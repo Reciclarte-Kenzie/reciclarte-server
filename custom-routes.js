@@ -43,6 +43,17 @@ router.get("/ideas", (request, response) => {
     });
   }
 
+  if (difficultyLevel) {
+    ideasData = ideasData.filter((idea) => {
+      difficultyLevel =
+        difficultyLevel instanceof Array
+          ? difficultyLevel
+          : [difficultyLevel];
+          
+      return difficultyLevel.some((searchedDifficulty) => idea.difficulty_level == searchedDifficulty);
+    });
+  }
+
   if (maximumCost) {
     ideasData = ideasData.filter((idea) => idea.estimated_cost <= maximumCost);
   }
