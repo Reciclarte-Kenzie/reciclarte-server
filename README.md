@@ -119,7 +119,7 @@ Resposta padrão: <br>
 }
 ```
 
-### Buscar todos os usuários - GET /users/`${id}` <br>
+### Buscar todos os usuários - GET /users <br>
 
 Deve fornecer token de acesso <br>
 Resposta padrão: <br>
