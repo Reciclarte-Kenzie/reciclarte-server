@@ -4,14 +4,25 @@ const router = express.Router();
 
 router.get("/ideas", (request, response) => {
   const database = JSON.parse(fileSystem.readFileSync("db.json", "utf-8"));
-
   let ideasData = database.ideas;
+
   let searchedMaterials = request.query.materials;
   let searchedCategories = request.query.categories;
   let searchedDifficultyLevel = request.query.difficulty_level;
-
   const maximumCost = request.query.maximum_cost;
   const searchedTitle = request.query.title?.toLowerCase();
+  const orderedField = request.query.ordered_field;
+  const orderDirection = request.query.ordered_direction || "asc";
+
+  if (orderedField) {
+    ideasData = ideasData.sort((previousIdea, actualIdea) => {
+      if (orderDirection != "desc") {
+        return previousIdea[orderedField] - actualIdea[orderedField];
+      }
+
+      return actualIdea[orderedField] - previousIdea[orderedField];
+    });
+  }
 
   if (searchedMaterials) {
     ideasData = ideasData.filter((idea) => {
