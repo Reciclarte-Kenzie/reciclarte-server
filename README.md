@@ -259,60 +259,6 @@ Resposta padrão: <br>
     "id": 4
   }
 ]
-
-```
-### Listar todas as ideias - GET /ideas <br>
-
-Não precisa de token de acesso. <br>
-Resposta padrão: <br>
-
-```json
-[
-  {
-    "title": "Garrafa fechada",
-    "imgs": ["http://img.com/img-1.png", "http://img.com/img-2.png"],
-    "steps": "passo a passo",
-    "materials": ["Garrafa pet", "Tampa de garrafa"],
-    "categories": ["Móveis"],
-    "estimated_cost": 5.0,
-    "difficulty_level": 1,
-    "userId": 3,
-    "id": 1
-  },
-  {
-    "title": "Garrafa fechada",
-    "imgs": ["http://img.com/img-1.png", "http://img.com/img-2.png"],
-    "steps": "passo a passo",
-    "materials": ["Garrafa pet", "Tampa de garrafa"],
-    "categories": ["Móveis"],
-    "estimated_cost": 5.0,
-    "difficulty_level": 1,
-    "userId": 3,
-    "id": 2
-  },
-  {
-    "title": "Garrafa fechada",
-    "imgs": ["http://img.com/img-1.png", "http://img.com/img-2.png"],
-    "steps": "passo a passo",
-    "materials": ["Garrafa pet", "Tampa de garrafa"],
-    "categories": ["Móveis"],
-    "estimated_cost": 5.0,
-    "difficulty_level": 1,
-    "userId": 1,
-    "id": 3
-  },
-  {
-    "title": "Garrafa fechada",
-    "imgs": ["http://img.com/img-1.png", "http://img.com/img-2.png"],
-    "steps": "passo a passo",
-    "materials": ["Garrafa pet", "Tampa de garrafa"],
-    "categories": ["Móveis"],
-    "estimated_cost": 5.0,
-    "difficulty_level": 1,
-    "userId": 1,
-    "id": 4
-  }
-]
 ```
 
 #### Query params - GET /ideas <br>
