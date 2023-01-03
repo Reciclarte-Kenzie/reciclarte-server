@@ -78,4 +78,21 @@ router.get("/ideas/materials", (_, response) => {
   return response.send(usedMaterials);
 });
 
+router.get("/ideas/categories", (_, response) => {
+  const database = JSON.parse(fileSystem.readFileSync("db.json", "utf-8"));
+  const ideasData = database.ideas;
+
+  const ownedCategories = [];
+
+  ideasData.forEach(idea => idea.categories.forEach(ideaCategorie => {
+    const thisCategorieIsNotIncluded = !ownedCategories.includes(ideaCategorie);
+
+    if(thisCategorieIsNotIncluded) {
+      ownedCategories.push(ideaCategorie);
+    }
+  }))
+
+  return response.send(ownedCategories);
+});
+
 module.exports = router;
