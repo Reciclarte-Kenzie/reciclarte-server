@@ -317,7 +317,7 @@ Resposta padrão: <br>
 
 Retorna todos as ideias que possuam a palavra especificada como parte do seu título.
 
-```json
+```
 /ideas?title=arranjo
 ```
 
@@ -327,13 +327,13 @@ Retorna todos as ideias que possuam a palavra especificada como parte do seu tí
 
 Retorna todas as ideias que tenham o material especificado como um de seus materiais.
   
-```json
+```
 /ideas?materials=garrafa
 ```
 
 É possível especificar vários materiais. Nesse caso, apenas as ideias que possuírem todos os materiais especificados serão retornadas.
 
-```json
+```
 /ideas?materials=garrafa&materials=fio&materials=tampa
 ```
 
@@ -343,13 +343,13 @@ Retorna todas as ideias que tenham o material especificado como um de seus mater
 
 Retorna todas as ideias que tenham a categoria especificada como uma de suas suas categorias.
   
-```json
+```
 /ideas?categories=colorido
 ```
 
 É possível especificar várias categorias. Nesse caso, apenas as ideias que possuírem todas as categorias especificadas serão retornadas.
 
-```json
+```
 /ideas?categories=colorido&categories=fofo&categories=clean
 ```
 
@@ -359,13 +359,13 @@ Retorna todas as ideias que tenham a categoria especificada como uma de suas sua
 
 Retorna todas as ideias que tenham o nível de dificuldade especificado.
   
-```json
+```
 /ideas?difficulty_level=1
 ```
 
 É possível especificar vários níveis de dificuldade. Nesse caso, todas as ideias que possuírem um dos níveis de dificuldade especificados serão retornadas.
 
-```json
+```
 /ideas?difficulty_level=1&difficulty_level=3&difficulty_level=5
 ```
 
@@ -376,7 +376,7 @@ Retorna todas as ideias que tenham o nível de dificuldade especificado.
 
 Retorna todas as ideias que tenham um custo estimado menor ou igual ao custo máximo especificado.
   
-```json
+```
 /ideas?maximum_cost=55
 ```
 
@@ -391,20 +391,20 @@ O query param `ordered_field` recebe como valor o nome do campo a partir do qual
 
 Caso o query param `ordered_direction` não seja especificado, a ordem assumida será ascedente (do menor para o maior).
 
-```json
+```
 /ideas?ordered_field=estimated_cost
 ```
 
 Para ordenar as ideias em ordem decrescente, basta especificar o query param `ordered_direction`, passando como valor a palavra `desc`.
 
-```json
+```
 /ideas?ordered_field=difficulty_level&ordered_direction=desc
 ```
 
 #### Especificando vários query params
 É possível especificar vários query params para que várias filtragens consecutivas sejam realizadas com base neles.
 
-```json
+```
 /ideas?maximum_cost=10&difficulty_level=1&ordered_field=difficulty_level&ordered_direction=desc
 ```
   
