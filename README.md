@@ -22,12 +22,7 @@ O usuário deve conter: <br>
   "password": "abcde",
   "name": "Jean Antunes",
   "bio": "Meu nome é Jean e sou apaixonado por artesanatos DIY",
-  "profile_pic": "http://img.com/png",
-  "social_media": {
-    "instagram": "http://instagram.com/user/exemplo-link",
-    "facebook": "http://facebook.com/user/exemplo-link",
-    "linkedin": "http://linkedin.com/user/exemplo-link"
-  }
+  "profile_pic": "http://img.com/png"
 }
 ```
 
@@ -42,11 +37,6 @@ Resposta padrão: <br>
     "name": "Jean Antunes",
     "bio": "Meu nome é Jean e sou apaixonado por artesanatos DIY",
     "profile_pic": "http://img.com/png",
-    "social_media": {
-      "instagram": "http://instagram.com/user/exemplo-link",
-      "facebook": "http://facebook.com/user/exemplo-link",
-      "linkedin": "http://linkedin.com/user/exemplo-link"
-    },
     "id": 1
   }
 }
@@ -65,11 +55,6 @@ Resposta padrão: <br>
     "name": "Jean Antunes",
     "bio": "Meu nome é Jean e sou apaixonado por artesanatos DIY",
     "profile_pic": "http://img.com/png",
-    "social_media": {
-      "instagram": "http://instagram.com/user/exemplo-link",
-      "facebook": "http://facebook.com/user/exemplo-link",
-      "linkedin": "http://linkedin.com/user/exemplo-link"
-    },
     "id": 1
   }
 }
@@ -90,7 +75,6 @@ Resposta padrão com a informação editada: <br>
     "profile_pic": "http://img.com/png",
     "social_media": {
       "instagram": "http://instagram.com/user/exemplo-link",
-      "facebook": "http://facebook.com/user/exemplo-link",
       "linkedin": "http://linkedin.com/user/exemplo-link"
     },
     "id": 1,
@@ -119,7 +103,6 @@ Resposta padrão: <br>
     "profile_pic": "http://img.com/png",
     "social_media": {
       "instagram": "http://instagram.com/user/exemplo-link",
-      "facebook": "http://facebook.com/user/exemplo-link",
       "linkedin": "http://linkedin.com/user/exemplo-link"
     },
     "id": 1,
@@ -144,7 +127,6 @@ Resposta padrão: <br>
       "profile_pic": "http://img.com/png",
       "social_media": {
         "instagram": "http://instagram.com/user/exemplo-link",
-        "facebook": "http://facebook.com/user/exemplo-link",
         "linkedin": "http://linkedin.com/user/exemplo-link"
       },
       "id": 1,
