@@ -4,7 +4,7 @@
 A API do site Reciclarte foi criada durante o projeto de finalização do módulo front-end da Kenzie Academy Brasil, ela permite ao usuário buscar ideias de acordo com os materiais especificados. Além disso, é possível cadastrar novos usuários e criar ou editar ideias na plataforma. A API também oferece diversas opções de filtragem através de query params para ajudar o usuário a encontrar as ideias desejadas de forma rápida e precisa.
 
 ## Carregar endpoints no insomnia
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=reciclarte-api&uri=)
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=reciclarte-api&uri=https%3A%2F%2Fgithub.com%2FReciclarte-Kenzie%2Freciclarte-server%2Fblob%2Fdevelop%2Freciclarte-endpoints.json)
 
 ## Base Url da API
 Essa é a URL usada antes dos endpoints: <br> 
