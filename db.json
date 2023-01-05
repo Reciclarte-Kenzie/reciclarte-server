@@ -12,6 +12,19 @@
         "linkedin": "https://www.linkedin.com/jean_antunes_artesanato/"
       },
       "id": 1
+    },
+    {
+      "email": "email@email.com",
+      "password": "$2a$10$lL3fASmLfFC5vybcnk7thOyX45bkABUOB8vyUSTruq6wg.bflSnLC",
+      "name": "Usuário Teste",
+      "bio": "Meu nome é Teste e sou apaixonado por artesanatos DIY",
+      "profile_pic": "https://img.freepik.com/fotos-gratis/homem-bonito-e-confiante-sorrindo-com-as-maos-cruzadas-no-peito_176420-18743.jpg?w=2000",
+      "social_media": {
+        "instagram": "https://www.instagram.com/jean_antunes_artesanato",
+        "facebook": "https://www.facebook.com/jean_antunes_artesanato/",
+        "linkedin": "https://www.linkedin.com/jean_antunes_artesanato/"
+      },
+      "id": 2
     }
   ],
   "ideas": [
