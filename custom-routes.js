@@ -64,7 +64,7 @@ router.get("/ideas", (request, response) => {
           : [searchedDifficultyLevel];
 
       return searchedDifficultyLevel.some(
-        (searchedDifficulty) => idea.difficulty_level == searchedDifficulty
+        (searchedDifficulty) => idea.difficulty_level <= searchedDifficulty
       );
     });
   }
