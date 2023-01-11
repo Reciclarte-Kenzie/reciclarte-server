@@ -3,7 +3,7 @@
     {
       "id": 1,
       "email": "antonio@mail.com",
-      "password": "123456",
+      "password": "abc",
       "name": "Antônio Silva Dauro",
       "bio": "Eu sou um homem apaixonado por artesanato e sustentabilidade. Sempre me interessei por técnicas manuais e criativas e gosto de transformar materiais reciclados em peças únicas e bonitas.",
       "profile_pic": "https://s2.glbimg.com/OKvApQkLyts-Zku_PYt5dqHKm2Q=/620x466/e.glbimg.com/og/ed/f/original/2020/08/27/arnaldosaccomanitv_10852559_624443207678380_964291240_n.jpg",
@@ -33,8 +33,8 @@
         "Papelão"
       ],
       "categories": ["Móveis", "Rústico"],
-      "estimated_cost": 20.0,
-      "difficulty_level": 5
+      "estimatedCost": 20.0,
+      "difficultyLevel": 5
     },
     {
       "id": 2,
@@ -49,8 +49,8 @@
       "steps": "1- Comece cortando a calça jeans ao meio, ao longo da costura lateral. Você vai usar as duas metades para criar a frente e o fundo da bolsa.\n2- Desvire as duas metades da calça e coloque-as com o lado avesso para cima. Corte o tecido extra das pernas, deixando cerca de 2 centímetros de margem em todos os lados.\n3- Use a fita métrica ou régua para medir a largura e altura da bolsa. Desenhe um retângulo no papel ou papelão com essas medidas e use-o como guia para cortar o tecido da bolsa.\n4- Posicione o tecido da bolsa com o lado direito para cima e coloque as duas metades da calça jeans por cima, também com o lado direito para cima. Alinhe as bordas e costure as duas metades da calça jeans ao tecido da bolsa, deixando uma abertura para virar a bolsa do avesso.\n5- Depois de costurar, vire a bolsa do avesso pela abertura e puxe o tecido para que fique bem esticado. Costure a abertura fechando a bolsa.\n6- Por fim, corte uma tira de tecido da calça jeans e costure-a ao longo da parte superior da bolsa para criar alças. Se quiser, você também pode acrescentar bolsos externos ou outros detalhes a gosto.",
       "materials": ["Jeans", "Régua", "Linha", "Caneta", "Papel"],
       "categories": ["Bolsa", "Reciclagem", "Roupa"],
-      "estimated_cost": 10,
-      "difficulty_level": 4
+      "estimatedCost": 10,
+      "difficultyLevel": 4
     },
     {
       "id": 3,
@@ -66,8 +66,8 @@
       "steps": "1- Colocar os palitos um ao lado do outro sobre a mesa\n2- Cubrir a parte dos palitos virada pra cima com a fita dupla face\n3- Envolver a lata com a parte colante dos palitos, fixando-os nela\n4-Inserir a fita de renda em torno do jarro",
       "materials": ["Palito", "Lata", "Fita dupla face", "Renda"],
       "categories": ["Jarro", "Reciclagem", "Fofo"],
-      "estimated_cost": 5,
-      "difficulty_level": 1
+      "estimatedCost": 5,
+      "difficultyLevel": 1
     }
   ]
 }
