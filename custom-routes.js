@@ -8,8 +8,8 @@ router.get("/ideas", (request, response) => {
 
   let searchedMaterials = request.query.materials;
   let searchedCategories = request.query.categories;
-  let searchedDifficultyLevel = request.query.difficulty_level;
-  const maximumCost = request.query.maximum_cost;
+  let searchedDifficultyLevel = request.query.difficultyLevel;
+  const maximumCost = request.query.maximumCost;
   const searchedTitle = request.query.title?.toLowerCase();
   const orderedField = request.query.ordered_field;
   const orderDirection = request.query.ordered_direction || "asc";
@@ -64,13 +64,13 @@ router.get("/ideas", (request, response) => {
           : [searchedDifficultyLevel];
 
       return searchedDifficultyLevel.some(
-        (searchedDifficulty) => idea.difficulty_level <= searchedDifficulty
+        (searchedDifficulty) => idea.difficultyLevel <= searchedDifficulty
       );
     });
   }
 
   if (maximumCost) {
-    ideasData = ideasData.filter((idea) => idea.estimated_cost <= maximumCost);
+    ideasData = ideasData.filter((idea) => idea.estimatedCost <= maximumCost);
   }
 
   if (searchedTitle) {
